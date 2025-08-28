@@ -12,9 +12,9 @@ export const CurrentProducts = () => {
   return (
     <div>
       <div className="grid grid-cols-1  gap-10">
-        {currentProducts.map((product: Product, idx: number) => (
+        {currentProducts.map((product, idx: number) => (
           <motion.div
-            key={product.href}
+            key={idx}
             initial={{
               opacity: 0,
               x: -50,
@@ -26,12 +26,8 @@ export const CurrentProducts = () => {
             transition={{ duration: 0.2, delay: idx * 0.1 }}
           >
             <Link
-              href={
-                product.slug
-                  ? `/current-projects/${product.slug}`
-                  : product.href
-              }
-              key={product.href}
+              key={idx}
+              href={"/current-projects/" + product.slug}
               className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
             >
               <Image
