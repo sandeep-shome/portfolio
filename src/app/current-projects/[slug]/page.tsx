@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import { CurrentProduct } from "@/components/currentProduct";
 import { SingleProduct } from "@/components/Product";
 import { currentProducts } from "@/constants/currentProducts";
 import { Product } from "@/types/products";
@@ -41,7 +42,7 @@ export default function SingleProjectPage({
   }
   return (
     <Container>
-      <SingleProduct product={product} />
+      <CurrentProduct product={product} />
     </Container>
   );
 }
