@@ -2,7 +2,7 @@ export const timeline = [
   {
     school: "George college",
     course: "Bachelors of Computer Application (BCA)",
-    cgpa: 8.5,
+    cgpa: 8.3,
     date: "2023 - Present",
     description:
       "Studying about the modern and technologies and exploring the deep of modern techs",
